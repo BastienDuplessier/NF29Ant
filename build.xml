@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="chaineEdit" default="all">
+
+  <target name="all" depends="module,grain" />
+
+  <target name="module">
+    <xslt in="src/modules/m1.xml" out="output/test.html" style="xsl/module.xsl"/>
+  </target>
+
+  <target name="grain">
+    <xslt in="src/grains/g1.xml" out="output/gtest.html" style="xsl/grain.xsl"/>
+  </target>
+</project>

@@ -1,0 +1,8 @@
+<module name="m1">
+  <code>1</code>
+  <responsable>Jack l'Eventrheure</responsable>
+  <grains>
+    <grain name="g1" />
+    <grain name="g2" />
+  </grains>
+</module>

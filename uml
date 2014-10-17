@@ -1,0 +1,16 @@
+Module(code:int, titre:string, responsable:string)
+  -> Contient des Grains
+
+Grain()
+  -> Contient des Divisions
+
+Division(titre:string)
+  -> Contient des Textes
+
+Texte()
+  -> Contient des Paragraphes
+  -> Contient des Notes
+
+Paragraphes(texte:string)
+
+Note(mot:string, texte:string)

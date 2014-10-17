@@ -1,0 +1,11 @@
+<grain name="g1">
+  <division name="d1">
+    <titre>Tuer des gens</titre>
+    <texte>
+      <para>
+	Salut les filles, salut salut les gars. Et voila maintenant le spectable va commencer.
+      </para>
+      <note>Ceci est un texte de Henri Des</note>
+    </texte>
+  </division>
+</grain>
