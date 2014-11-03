@@ -4,10 +4,10 @@
   <target name="all" depends="module,grain" />
 
   <target name="module">
-    <xslt in="src/modules/m1.xml" out="output/test.html" style="xsl/module.xsl"/>
+    <xslt in="src/modules/m1.xml" out="output/m1.html" style="xsl/module.xsl"/>
   </target>
 
   <target name="grain">
-    <xslt in="src/grains/g1.xml" out="output/gtest.html" style="xsl/grain.xsl"/>
+    <xslt in="src/grains/g1.xml" out="output/g1.html" style="xsl/grain.xsl"/>
   </target>
 </project>
