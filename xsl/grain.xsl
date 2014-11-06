@@ -14,28 +14,30 @@
   </xsl:template>
 
   <!-- Match divisions -->
-  <xsl:template match="code">
-    <h1>Module : <xsl:value-of select="." /></h1>
+  <xsl:template match="division">
+    <div class="division"><xsl:apply-templates /></div>
   </xsl:template>
 
-  <!-- Match resp -->
-  <xsl:template match="responsable">
-    <span class="author">Auteur : <xsl:value-of select="." /></span>
+  <!-- Match titre -->
+  <xsl:template match="titre">
+    <h1><xsl:value-of select="." /></h1>
   </xsl:template>
 
-  <!-- Match grains -->
-  <xsl:template match="grains">
-    <ul class="liste_de_grains"><xsl:apply-templates /></ul>
+  <!-- Match text -->
+  <xsl:template match="texte">
+    <div class="texte">
+      <xsl:apply-templates />
+    </div>
   </xsl:template>
 
-  <!-- Match grain -->
-  <xsl:template match="grain">
-    <li>
-      <a>
-	<xsl:attribute name="href"><xsl:value-of select='@name' />.html</xsl:attribute>
-	<xsl:value-of select='@name' />
-      </a>
-    </li>
+  <!-- Match para -->
+  <xsl:template match="para">
+    <p><xsl:value-of select="." /></p>
+  </xsl:template>
+
+  <!-- Match note -->
+  <xsl:template match="note">
+    <span class="note"><xsl:value-of select="." /></span>
   </xsl:template>
 
 </xsl:stylesheet>
